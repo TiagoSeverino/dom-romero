@@ -24,6 +24,9 @@ function App() {
 						<Route path="/menu">
 							<Menu />
 						</Route>
+						<Route path="/contact">
+							<h1>Contacto</h1>
+						</Route>
 					</Switch>
 				</Container>
 				<Footer />

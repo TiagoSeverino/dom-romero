@@ -20,11 +20,8 @@ class navbar extends Component {
 							<Link className="nav-link" to="/menu">
 								Menu
 							</Link>
-							<Link className="nav-link" to="/location">
-								Localização
-							</Link>
 							<Link className="nav-link" to="/contact">
-								Contacto
+								Localização e Contactos
 							</Link>
 							<Link className="nav-link" to="/order">
 								Encomendar Já
