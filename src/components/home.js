@@ -8,7 +8,7 @@ class Home extends Component {
 	render() {
 		return (
 			<>
-				<Row className="mb-1">
+				<Row>
 					<Col xs={12}>
 						<video width="100%" autoPlay>
 							<source src="/intro.mp4" type="video/mp4" />
@@ -84,7 +84,7 @@ class Home extends Component {
 						</p>
 					</Col>
 				</Row>
-				<Row className="mb-2">
+				<Row>
 					<Col xs={12}>
 						<Image src="/img/7.jpg" fluid />
 						<h3

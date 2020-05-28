@@ -10,13 +10,14 @@ import Footer from './components/footer';
 
 import Home from './components/home';
 import Menu from './components/menu';
+import Contact from './components/contact';
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
 				<Navbar />
-				<Container fluid="xl" className="container-adaptive">
+				<Container fluid="xl" className="container-adaptive mb-2">
 					<Switch>
 						<Route exact path="/">
 							<Home />
@@ -25,7 +26,7 @@ function App() {
 							<Menu />
 						</Route>
 						<Route path="/contact">
-							<h1>Contacto</h1>
+							<Contact />
 						</Route>
 					</Switch>
 				</Container>

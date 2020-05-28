@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, ButtonGroup, Button } from 'react-bootstrap';
 
 const variants = [
 	'danger',
@@ -43,25 +43,21 @@ class Menu extends Component {
 					</Col>
 				</Row>
 				<Row className="mb-4">
-					<Col xs={12}>
+					<ButtonGroup aria-label="Basic example">
 						{menu &&
 							menu.map((cat) => (
-								<Col xs={4} style={{ padding: 0 }}>
-									<Button
-										variant={vars.pop()}
-										onClick={() =>
-											this.handleClick(cat.title)
-										}
-										className="ml-auto mr-auto"
-										style={{
-											width: `100%`,
-										}}
-									>
-										{cat.title}
-									</Button>
-								</Col>
+								<Button
+									variant={vars.pop()}
+									onClick={() => this.handleClick(cat.title)}
+									className="ml-auto mr-auto"
+									style={{
+										width: `100%`,
+									}}
+								>
+									{cat.title}
+								</Button>
 							))}
-					</Col>
+					</ButtonGroup>
 				</Row>
 
 				<Row className="mb-2">
