@@ -10,7 +10,7 @@ class Home extends Component {
 			<>
 				<Row>
 					<Col xs={12}>
-						<video width="100%" autoPlay>
+						<video width="100%" autoPlay playsInline loop>
 							<source src="/intro.mp4" type="video/mp4" />
 						</video>
 					</Col>
