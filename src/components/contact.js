@@ -8,7 +8,7 @@ class Contact extends Component {
 			<>
 				<Row className="mb-2">
 					<Col xs={12}>
-						<Image src="/img/1.png" fluid />
+						<Image src="/dom-romero/img/1.png" fluid />
 						<h1
 							style={{
 								...shadow,
