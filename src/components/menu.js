@@ -36,11 +36,11 @@ const categorias = [
 	},
 	{
 		nome: 'Pizzas',
-		img: ['pizzas1.jpg', 'pizzas2.jpg', 'pizzas3.jpg', 'pizzas4.jpg'],
+		img: ['pizzas3.jpg', 'pizzas2.jpg', 'pizzas1.jpg', 'pizzas4.jpg'],
 	},
 	{
 		nome: 'Bebidas',
-		img: ['bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg', 'bebidas4.jpg'],
+		img: ['bebidas4.jpg', 'bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg'],
 	},
 	{
 		nome: 'Sobremesas',
