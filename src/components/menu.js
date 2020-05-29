@@ -133,7 +133,7 @@ class Menu extends Component {
 								display.img.map((image, k) => (
 									<Carousel.Item key={k}>
 										<Image
-											src={`/dom-romero/ementa/${image}`}
+											src={`/ementa/${image}`}
 											width="100%"
 										></Image>
 									</Carousel.Item>

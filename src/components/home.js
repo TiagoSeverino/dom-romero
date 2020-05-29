@@ -11,10 +11,7 @@ class Home extends Component {
 				<Row>
 					<Col xs={12}>
 						<video width="100%" autoPlay playsInline loop>
-							<source
-								src="/dom-romero/intro.mp4"
-								type="video/mp4"
-							/>
+							<source src="/intro.mp4" type="video/mp4" />
 						</video>
 					</Col>
 				</Row>
@@ -22,7 +19,7 @@ class Home extends Component {
 				<Row className="mb-2">
 					<Col xs={12}>
 						<Link to="/menu">
-							<Image src="/dom-romero/img/3.png" fluid />
+							<Image src="/img/3.png" fluid />
 							<h1
 								style={{
 									...shadow,
@@ -89,7 +86,7 @@ class Home extends Component {
 				</Row>
 				<Row>
 					<Col xs={12}>
-						<Image src="/dom-romero/img/7.jpg" fluid />
+						<Image src="/img/7.jpg" fluid />
 						<h3
 							style={{
 								...shadow,
