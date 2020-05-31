@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -15,23 +15,21 @@ import Contact from './components/contact';
 function App() {
 	return (
 		<div className="App">
-			<Router>
-				<Navbar />
-				<Container fluid="xl" className="container-adaptive mb-2">
-					<Switch>
-						<Route exact path="/">
-							<Home />
-						</Route>
-						<Route path="/menu">
-							<Menu />
-						</Route>
-						<Route path="/contact">
-							<Contact />
-						</Route>
-					</Switch>
-				</Container>
-				<Footer />
-			</Router>
+			<Navbar />
+			<Container fluid="xl" className="container-adaptive mb-2">
+				<Switch>
+					<Route exact path="/">
+						<Home />
+					</Route>
+					<Route path="/menu">
+						<Menu />
+					</Route>
+					<Route path="/contact">
+						<Contact />
+					</Route>
+				</Switch>
+			</Container>
+			<Footer />
 		</div>
 	);
 }
