@@ -39,9 +39,9 @@ class Home extends Component {
 				</Row>
 
 				<Row className="mb-1">
-					{/*<Col xs={12} md={3}>
+					<Col xs={12} md={3}>
 						<Image
-							src="https://colcacchio.co.za/wp-content/uploads/2018/05/MK-Profile.jpg"
+							src="https://cdn.discordapp.com/attachments/714252508909797456/716653892590632990/P1100063.jpg"
 							fluid
 							style={{
 								position: 'relative',
@@ -52,7 +52,7 @@ class Home extends Component {
 								marginLeft: '10%',
 							}}
 						/>
-					</Col>*/}
+					</Col>
 
 					<Col xs={12} md={9}>
 						<p
