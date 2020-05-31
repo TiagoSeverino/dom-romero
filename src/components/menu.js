@@ -85,7 +85,7 @@ class Menu extends Component {
 						</h1>
 					</Col>
 				</Row>
-				<Row className="mb-4">
+				<Row className="mb-2">
 					<ButtonGroup
 						style={{
 							display: 'contents',
