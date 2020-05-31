@@ -38,25 +38,8 @@ class Home extends Component {
 					</Col>
 				</Row>
 
-				{/*<Row className="mb-1">
-					<Col xl={12}>
-						<Carousel controls={false}>
-							<Carousel.Item>
-								<Image src="/img/6.jpeg" fluid />
-
-								<Carousel.Caption>
-									<h3 style={shadow}>Dom Romero</h3>
-									<p style={shadow}>
-										Pizzas artesanais desde 1996
-									</p>
-								</Carousel.Caption>
-							</Carousel.Item>
-						</Carousel>
-					</Col>
-		</Row>*/}
-
 				<Row className="mb-1">
-					<Col xs={12} md={3}>
+					{/*<Col xs={12} md={3}>
 						<Image
 							src="https://colcacchio.co.za/wp-content/uploads/2018/05/MK-Profile.jpg"
 							fluid
@@ -69,7 +52,7 @@ class Home extends Component {
 								marginLeft: '10%',
 							}}
 						/>
-					</Col>
+					</Col>*/}
 
 					<Col xs={12} md={9}>
 						<p
