@@ -7,15 +7,7 @@ import {
 	Carousel,
 	Image,
 } from 'react-bootstrap';
-
-const variants = [
-	'danger',
-	'warning',
-	'success',
-	'danger',
-	'warning',
-	'success',
-];
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const categorias = [
 	{
@@ -67,7 +59,6 @@ class Menu extends Component {
 
 	render() {
 		const { activeIndex, selected } = this.state;
-		const vars = JSON.parse(JSON.stringify(variants));
 
 		const display = selected
 			? categorias.find((m) => m.nome === selected)
@@ -75,33 +66,69 @@ class Menu extends Component {
 
 		return (
 			<>
-				<Row className="mt-3 mb-3">
+				<Row className="mb-2">
 					<Col xs={12}>
-						<h1 style={{ textAlign: 'center' }}>Menu</h1>
+						<Image src="/img/3.png" fluid />
+						<h1
+							style={{
+								...shadow,
+								position: 'absolute',
+								top: '35%',
+								textAlign: 'center',
+								width: '100%',
+								color: 'white',
+								left: '1%',
+								right: '1%',
+							}}
+						>
+							Menu
+						</h1>
 					</Col>
 				</Row>
 				<Row className="mb-4">
 					<ButtonGroup
 						style={{
-							display: 'inline-block',
+							display: 'contents',
 						}}
 					>
 						{categorias.map((cat, k) => (
-							<Button
-								variant={vars.pop()}
-								onClick={() => this.handleClick(cat.nome)}
-								className="ml-auto mr-auto"
-								key={k}
-								style={{
-									width: `100%`,
-								}}
-							>
-								{cat.nome}
-							</Button>
+							<>
+								{k === 6 && <Col xs={3} />}
+								<Col
+									xs={6}
+									style={{
+										paddingRight:
+											k % 2 === 0 && k !== 6
+												? '5px'
+												: '15px',
+										paddingLeft:
+											k % 2 === 1 ? '5px' : '15px',
+									}}
+									className="mb-2"
+								>
+									<AnchorLink href="#menu">
+										<Button
+											variant="dark"
+											onClick={() =>
+												this.handleClick(cat.nome)
+											}
+											//className="ml-auto mr-auto"
+											key={k}
+											style={{
+												width: `100%`,
+												backgroundColor: '#000',
+												borderColor: '#000',
+											}}
+										>
+											{cat.nome}
+										</Button>
+									</AnchorLink>
+								</Col>
+							</>
 						))}
 					</ButtonGroup>
 				</Row>
-				<Row className="mb-2">
+				<Row className="mb-2" id="menu">
 					<Col xs={12}>
 						<Carousel
 							interval={null}
@@ -145,5 +172,9 @@ class Menu extends Component {
 		);
 	}
 }
+
+const shadow = {
+	textShadow: '1px 1px 10px #000',
+};
 
 export default Menu;
