@@ -39,9 +39,9 @@ class Home extends Component {
 				</Row>
 
 				<Row className="mb-1">
-					<Col xs={12} md={3}>
+					<Col xs={6} md={3}>
 						<Image
-							src="https://cdn.discordapp.com/attachments/714252508909797456/716653892590632990/P1100063.jpg"
+							src="/img/8.jpg"
 							fluid
 							style={{
 								position: 'relative',
@@ -54,7 +54,7 @@ class Home extends Component {
 						/>
 					</Col>
 
-					<Col xs={12} md={9}>
+					<Col xs={6} md={9}>
 						<p
 							className="description"
 							style={{ padding: '0 15px' }}
