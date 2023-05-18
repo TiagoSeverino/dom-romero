@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import {
-	Row,
-	Col,
-	ButtonGroup,
-	Button,
-	Carousel,
-	Image,
-} from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import {
+	Button,
+	ButtonGroup,
+	Carousel,
+	Col,
+	Image,
+	Row,
+} from 'react-bootstrap';
 
 const categorias = [
 	{
@@ -19,20 +19,23 @@ const categorias = [
 		img: ['acompanhamentos.jpg'],
 	},
 	{
-		nome: 'Carne e Peixe',
-		img: ['carnepeixe.jpg'],
-	},
-	{
 		nome: 'Especialidades Italianas',
-		img: ['italianas.jpg'],
+		img: ['italianas.jpg', 'italianas1.jpg'],
 	},
 	{
 		nome: 'Pizzas',
-		img: ['pizzas3.jpg', 'pizzas2.jpg', 'pizzas1.jpg', 'pizzas4.jpg'],
+		img: [
+			'pizzas3.jpg',
+			'pizzas2.jpg',
+			'pizzas1.jpg',
+			'pizzas4.jpg',
+			'pizzas5.jpg',
+			'pizzas6.jpg',
+		],
 	},
 	{
 		nome: 'Bebidas',
-		img: ['bebidas4.jpg', 'bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg'],
+		img: ['bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg'],
 	},
 	{
 		nome: 'Sobremesas',
