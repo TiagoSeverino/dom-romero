@@ -34,12 +34,12 @@ const categorias = [
 		],
 	},
 	{
-		nome: 'Bebidas',
-		img: ['bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg'],
-	},
-	{
 		nome: 'Sobremesas',
 		img: ['sobremesas.jpg'],
+	},
+	{
+		nome: 'Bebidas',
+		img: ['bebidas1.jpg', 'bebidas2.jpg', 'bebidas3.jpg'],
 	},
 ];
 
